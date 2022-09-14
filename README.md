@@ -1,3 +1,3 @@
-Tutorial for a Git repository
-Personal Site
-Felix
+#Tutorial for a Git repository
+
+Personal Site by Felix
