@@ -1,10 +1,8 @@
-# Tutorial for a Git repository
+# Course Project
 
-- With the help of [w3schools](https://www.w3schools.com/)
+## The Complete 2022 Web Development Bootcamp
 
-Personal Site by Felix [blogpost](https://felix-db1.github.io/)
+- [Progress Tracker](https://www.w3schools.com/)
 
-- Approved by Elon-san
-- To the moon
-
-* Consumer Price Index (CPI)
+- [GitHub Page](https://felix-db1.github.io/)
+  > by **Felix Dubois**
