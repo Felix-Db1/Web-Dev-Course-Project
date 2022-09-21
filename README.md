@@ -6,4 +6,4 @@
 
 - [GitHub Page](https://felix-db1.github.io/)
 
-> Created by **Felix Dubois** and GM
+> Created by **Felix Dubois**
