@@ -1,8 +1,54 @@
 body {
-  background-color: darkseagreen;
+  background-color: #800000;
+}
+
+hr {
+  background-color: #4d0000;
+  height: 4px;
+  border: 0;
 }
 
 h1 {
-  color: whitesmoke;
-  margin-left: 20px;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section2 {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image1 {
+  border-radius: 50%;
+  outline: 3px solid;
+  outline-color: black;
+  outline-offset: -1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.image2 {
+  outline: 3px solid;
+  outline-offset: -1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
