@@ -33,7 +33,13 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.section3 {
+.link1 {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link2 {
   color: white;
   display: block;
   text-align: center;
