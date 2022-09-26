@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Felix Dubois" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Socials</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <h1>
+      <p>Social Media:</p>
+    </h1>
+    <h2>
+      <a class="link3" href="https://twitter.com/elonmusk">Twitter</a>
+    </h2>
+    <h2 style="margin-bottom: 30px">
+      <a class="link3" href="https://www.instagram.com/elonmusk/">Instagram</a>
+    </h2>
+
+    <hr />
+
+    <h1>
+      <p>Contact Us:</p>
+    </h1>
+    <div style="text-align: center">
+      <form action="mailto:felix_db1@proton.me" method="post" enctype="text/plain">
+        <label style="color: white">Name:</label><br />
+        <input type="text" name="yourName" /><br />
+        <label style="color: white">Email:</label><br />
+        <input type="email" name="yourEmail" /><br />
+        <label style="color: white">Message:</label><br />
+        <textarea name="yourMessage" cols="45" rows="12"></textarea><br />
+        <input type="submit" />
+      </form>
+    </div>
   </body>
 </html>
