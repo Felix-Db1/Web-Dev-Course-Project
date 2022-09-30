@@ -7,3 +7,5 @@
 - [GitHub Page](https://felix-db1.github.io/Web-Dev-Course-Project/)
 
 > Created by **Felix Dubois**
+
+<!-- REBASE -->
