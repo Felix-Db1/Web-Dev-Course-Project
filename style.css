@@ -39,10 +39,23 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 25px;
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .link {
   color: #f7f6dc;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+}
+
+.link1 {
+  color: #f7f6dc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .u-list {
@@ -54,11 +67,41 @@ h2 {
 }
 
 .column1 {
-  width: fit-content;
   padding-right: 220px;
+  width: fit-content;
 }
 
 .column2 {
+  width: fit-content;
+}
+
+.column3 {
+  padding-left: 477.5px;
+  width: fit-content;
+}
+
+.column4 {
+  padding-left: 100px;
+  width: fit-content;
+}
+
+.column5 {
+  padding-left: 507.5px;
+  width: fit-content;
+}
+
+.column6 {
+  padding-left: 100px;
+  width: fit-content;
+}
+
+.column7 {
+  padding-left: 918px;
+  width: fit-content;
+}
+
+.column8 {
+  padding-left: 100px;
   width: fit-content;
 }
 
@@ -135,6 +178,15 @@ h2 {
   width: 60%;
 }
 
+.container5 {
+  background-color: #1c6758;
+  outline: 2px solid;
+  outline-color: #393232;
+  position: fixed;
+  top: 969.5px;
+  width: 100%;
+}
+
 #image1 {
   border-radius: 100%;
   display: block;
@@ -165,135 +217,121 @@ h2 {
   width: 485px;
 }
 
+#image3-a {
+  display: block;
+  left: 0;
+  right: 0;
+  top: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid;
+  outline-color: #393232;
+  outline-offset: -1px;
+  position: absolute;
+  width: 485px;
+}
+
+#image3-b {
+  display: block;
+  left: 0;
+  right: 0;
+  top: 349px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid;
+  outline-color: #393232;
+  outline-offset: -1px;
+  position: absolute;
+  width: 485px;
+}
+
+#image3-c {
+  display: block;
+  left: 0;
+  right: 0;
+  top: 661px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid;
+  outline-color: #393232;
+  outline-offset: -1px;
+  position: absolute;
+  width: 485px;
+}
+
 #image4 {
   display: block;
-  position: absolute;
-  left: 6.25%;
+  left: 4%;
   top: 100px;
-  width: 140px;
+  position: fixed;
+  width: 100px;
 }
 
 #image5 {
   display: block;
-  position: absolute;
   left: 86.75%;
-  top: 300px;
-  width: 140px;
+  top: 100px;
+  position: fixed;
+  width: 100px;
 }
 
 #image6 {
   display: block;
-  position: absolute;
-  left: 6.25%;
-  top: 500px;
-  width: 140px;
+  left: 10%;
+  top: 450px;
+  position: fixed;
+  width: 100px;
 }
 
 #image7 {
   display: block;
-  position: absolute;
-  left: 86.75%;
-  top: 700px;
-  width: 140px;
+  left: 90%;
+  top: 450px;
+  position: fixed;
+  width: 160px;
 }
 
 #image8 {
   display: block;
-  position: absolute;
   left: 6.25%;
-  top: 900px;
-  width: 140px;
+  top: 800px;
+  position: fixed;
+  width: 100px;
 }
 
 #image9 {
   display: block;
-  position: absolute;
-  left: 86.75%;
-  top: 1100px;
-  width: 140px;
+  left: 84%;
+  top: 800px;
+  position: fixed;
+  width: 100px;
 }
 
 /*
 #image10 {
   display: block;
-  position: absolute;
   left: 6.25%;
   top: 0px;
-  width: 140px;
-}
-
-#image11 {
-  display: block;
   position: absolute;
-  left: 86.75%;
-  top: 0px;
-  width: 140px;
-}
-
-#image12 {
-  display: block;
-  position: absolute;
-  left: 6.25%;
-  top: 0px;
-  width: 140px;
-}
-
-#image13 {
-  display: block;
-  position: absolute;
-  left: 86.75%;
-  top: 0px;
-  width: 140px;
-}
-
-#image14 {
-  display: block;
-  position: absolute;
-  left: 6.25%;
-  top: 0px;
-  width: 140px;
-}
-
-#image15 {
-  display: block;
-  position: absolute;
-  left: 86.75%;
-  top: 0px;
-  width: 140px;
-}
-
-#image16 {
-  display: block;
-  position: absolute;
-  left: 6.25%;
-  top: 0px;
-  width: 140px;
-}
-
-#image17 {
-  display: block;
-  position: absolute;
-  left: 86.75%;
-  top: 0px;
   width: 140px;
 }
 */
 
-#image18 {
+#image11 {
   display: block;
-  position: absolute;
   left: 0;
   top: 0;
+  position: absolute;
 }
 
-#image19 {
+#image12 {
   display: block;
-  position: absolute;
   left: 80.1%;
   top: 0;
+  position: absolute;
 }
 
-#image20 {
+#image13 {
   display: block;
   position: absolute;
   right: 10%;
@@ -311,7 +349,7 @@ a:visited {
 
 a:hover {
   color: #d6cda4;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -320,6 +358,7 @@ a:hover {
 
 ::-webkit-scrollbar-track {
   background: #555;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -332,17 +371,14 @@ a:hover {
 }
 
 /*
+  bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
   position: absolute;
   width: 60px;
-*/
-
-/*
-  bottom: 0;
-  top: 0;
-  margin-top: auto;
-  margin-bottom: auto;
 */
