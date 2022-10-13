@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Felix Dubois" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>The Richest Man Alive</title>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,67 +18,84 @@
   </head>
 
   <body>
-    <div class="container1">
-      <img id="image1" src="images/img_Elon-Musk-face.png" alt="Elon Musk" />
-
-      <p id="h1"><em>Elon Musk</em></p>
-      <h2><em>The Renowned Entrepreneur and Innovator</em></h2>
-
-      <hr />
-
-      <div class="section1">
-        <p>
-          Elon Reeve Musk is a naturalized American business magnate and investor.<br />
-          He is the founder, CEO, and Chief Engineer at <strong>SpaceX</strong>; angel investor, CEO, and Product
-          Architect of <strong>Tesla, Inc</strong>.<br />
-          As well as a founder of <strong>The Boring Company</strong>; and co-founder of <strong>Neuralink</strong> and
-          <strong>OpenAI</strong>.
-        </p>
+    <div class="background-container">
+      <div class="background-rockets">
+        <img id="rocket-1-left-img" src="images/img_Rocket-1-L.png" alt="Rocket" />
+        <img id="rocket-1-right-img" src="images/img_Rocket-1-R.png" alt="Rocket" />
+        <img id="rocket-2-left-img" src="images/img_Rocket-2-L.png" alt="Rocket" />
+        <img id="rocket-2-right-img" src="images/img_Rocket-2-R.png" alt="Rocket" />
+        <img id="rocket-3-left-img" src="images/img_Rocket-3-L.png" alt="Rocket" />
+        <img id="rocket-3-right-img" src="images/img_Rocket-3-R.png" alt="Rocket" />
       </div>
-    </div>
 
-    <div class="container2">
-      <h2>
-        <em>The Wonders of <a class="link" href="https://www.spacex.com/">SpaceX</a></em>
-      </h2>
+      <div class="bio-section section-outline">
+        <img class="portrait-img img-outline" src="images/img_Elon-Musk-face.png" alt="Elon Musks Portrait" />
 
-      <hr />
+        <p class="initials"><em>Elon Musk</em></p>
 
-      <div class="section2">
-        <p><em>Current launch vehicles</em></p>
-        <ul class="u-list1">
-          <li>Falcon Heavy</li>
-          <li>Falcon 9</li>
-        </ul>
+        <h2 class="secondary-title secondary-element-color">
+          <em>The Renowned Entrepreneur and Innovator</em>
+        </h2>
 
-        <p><em>Vehicles in development</em></p>
-        <ul class="u-list2">
-          <li>Starship</li>
-          <ul class="u-list3">
-            <li>Super Heavy Booster 7</li>
-          </ul>
-        </ul>
+        <hr class="split-line tertiary-element-color" />
 
-        <p><em>Retired vehicles</em></p>
-        <ul class="u-list4">
-          <li>Falcon 1</li>
-          <li>Grasshopper</li>
-        </ul>
+        <div class="bio-summary">
+          <p>
+            Elon Reeve Musk is a naturalized American business magnate and investor.<br />
+            He is the founder, CEO, and Chief Engineer at <strong>SpaceX</strong>; angel investor, CEO, and Product Architect of
+            <strong>Tesla, Inc</strong>.<br />
+            As well as a founder of <strong>The Boring Company</strong>; and co-founder of <strong>Neuralink</strong> and
+            <strong>OpenAI</strong>.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="container3">
-      <h2>
-        <em>The Innovations of <a class="link" href="https://www.tesla.com/">Tesla</a></em>
-      </h2>
+      <div class="space-x-section section-outline">
+        <h2 class="secondary-title secondary-element-color">
+          <em>The Wonders of <a class="title-link secondary-element-color" href="https://www.spacex.com/">SpaceX</a></em>
+        </h2>
 
-      <hr />
+        <hr class="split-line tertiary-element-color" />
 
-      <div class="section3">
-        <div class="row">
-          <div class="column1">
+        <div class="flex-spaced-evenly" style="margin: 25px 0">
+          <div class="rockets-summary">
+            <p><em>Current launch vehicles</em></p>
+            <ul>
+              <li>Falcon Heavy</li>
+              <li>Falcon 9</li>
+            </ul>
+
+            <p><em>Vehicles in development</em></p>
+            <ul>
+              <li>Starship</li>
+              <ul>
+                <li>Super Heavy Booster 7</li>
+              </ul>
+            </ul>
+
+            <p><em>Retired vehicles</em></p>
+            <ul class="retired-vehicles-list">
+              <li>Falcon 1</li>
+              <li>Grasshopper</li>
+            </ul>
+          </div>
+
+          <img class="starship-img img-outline" src="images/img_Starship.jpg" alt="Starship" />
+        </div>
+        <div class="starship-img-mobile img-outline"></div>
+      </div>
+
+      <div class="tesla-section section-outline">
+        <h2 class="secondary-title secondary-element-color">
+          <em>The Innovations of <a class="title-link secondary-element-color" href="https://www.tesla.com/">Tesla</a></em>
+        </h2>
+
+        <hr class="split-line tertiary-element-color" />
+
+        <div class="flex-centered" style="margin: 25px 0; z-index: -1">
+          <div class="automotive-industry-summary">
             <p><em>Automotive industry</em></p>
-            <ul class="u-list5">
+            <ul class="automobile-list">
               <li>Model S</li>
               <li>Model E</li>
               <li>Model X</li>
@@ -85,44 +104,37 @@
             </ul>
           </div>
 
-          <div class="column2">
+          <div class="robotics-summary">
             <p><em>Robotics</em></p>
-            <ul class="u-list6">
+            <ul>
               <li>Tesla Bot</li>
               <li>Optimus</li>
             </ul>
           </div>
         </div>
+
+        <img class="robot-img" src="images/img_Optimus.png" alt="Optimus Robot" />
+
+        <div class="robot-img-mobile"></div>
       </div>
-    </div>
 
-    <div class="container4">
-      <div class="row">
-        <div class="column3">
-          <h3 class="link2">
-            <a class="link1" href="/Web-Dev-Course-Project/contacts.html">Contacts</a>
-          </h3>
+      <div class="nav-bar-section-index section-outline">
+        <div class="flex-centered">
+          <div class="nav-column-1-index">
+            <p>
+              <a class="nav-bar-link secondary-element-color" href="/Web-Dev-Course-Project/contacts.html"><strong>Contacts</strong></a>
+            </p>
+          </div>
+
+          <div class="nav-column-2-index">
+            <p>
+              <a class="nav-bar-link secondary-element-color" href="/Web-Dev-Course-Project/dev-blog.html"><strong>Dev Blog</strong></a>
+            </p>
+          </div>
         </div>
-        <div class="column4">
-          <h3 class="link2">
-            <a class="link1" href="/Web-Dev-Course-Project/dev-blog.html">Dev Blog</a>
-          </h3>
-        </div>
+
+        <p class="copyright">© Felix Dubois</p>
       </div>
-    </div>
-
-    <img id="image2-a" src="images/img_Starship.jpg" alt="Starship" />
-    <img id="image2-b" src="images/img_Optimus.png" alt="Optimus Robot" />
-
-    <img id="image0-a" src="images/img_Sky-L.png" alt="Space" />
-    <img id="image0-b" src="images/img_Sky-R.png" alt="Space" />
-    <div>
-      <img id="image0-c" src="images/img_Rocket-1-L.png" alt="Rocket" />
-      <img id="image0-d" src="images/img_Rocket-1-R.png" alt="Rocket" />
-      <img id="image0-e" src="images/img_Rocket-2-L.png" alt="Rocket" />
-      <img id="image0-f" src="images/img_Rocket-2-R.png" alt="Rocket" />
-      <img id="image0-g" src="images/img_Rocket-3-L.png" alt="Rocket" />
-      <img id="image0-h" src="images/img_Rocket-3-R.png" alt="Rocket" />
     </div>
   </body>
 </html>
