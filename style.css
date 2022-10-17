@@ -34,16 +34,31 @@ global-classes
 
 .copyright {
   font-family: "Sacramento";
+  font-size: 1.1vw;
+  bottom: 0;
+  position: fixed;
+  left: 0.4vw;
 }
 
-.flex-centered {
+.flex-centered,
+.flex-centered-1 {
   display: flex;
   justify-content: center;
 }
 
-.flex-spaced-evenly {
+.flex-centered-1 {
+  margin: 25px 0;
+  z-index: -1;
+}
+
+.flex-spaced-evenly,
+.flex-spaced-evenly-1 {
   display: flex;
   justify-content: space-evenly;
+}
+
+.flex-spaced-evenly-1 {
+  margin: 25px 0;
 }
 
 .img-outline {
@@ -82,6 +97,11 @@ global-classes
   margin: 0;
   padding: 25px 0;
   text-align: center;
+}
+
+.secondary-title-column {
+  margin-top: -3px;
+  padding-top: 0;
 }
 
 .section-outline {
@@ -130,6 +150,7 @@ background-container
 .background-container-dev-blog {
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
+  padding-bottom: 75px;
 }
 
 #rocket-1-left-img,
@@ -193,6 +214,7 @@ index.html
   box-sizing: border-box;
   margin: auto;
   padding: 15px 15px 25px;
+  width: 60%;
 }
 
 .portrait-img {
@@ -242,6 +264,10 @@ index.html
   width: 575px;
 }
 
+.starship-img-mobile {
+  display: none;
+}
+
 .tesla-section {
   background-color: #56776c;
 }
@@ -276,9 +302,13 @@ index.html
   width: 290px;
 }
 
+.robot-img-mobile {
+  display: none;
+}
+
 .nav-bar-section-index {
   background-color: #649c81;
-  padding: 25px 15px 0;
+  padding: 25px 15px;
 }
 
 .nav-column-1-index {
@@ -313,6 +343,7 @@ contacts.html
   box-sizing: border-box;
   margin: auto;
   padding: 15px 15px 25px;
+  width: 60%;
 }
 
 .gallery-section {
@@ -320,7 +351,7 @@ contacts.html
 }
 
 .images-container {
-  margin: 26px auto;
+  margin: 26px auto 25px;
   max-width: 80vw;
   width: 575px;
 }
@@ -342,7 +373,7 @@ contacts.html
 
 .nav-bar-section-contacts {
   background-color: #56776c;
-  padding: 25px 15px 0;
+  padding: 25px 15px;
 }
 
 .nav-column-1-contacts {
@@ -374,7 +405,7 @@ dev-blog.html
   background-color: #1c6758;
   bottom: 0;
   box-sizing: border-box;
-  padding: 25px 15px 0;
+  padding: 25px 15px;
   position: fixed;
   width: 100%;
 }
@@ -452,10 +483,108 @@ media-queries
 
 */
 
-@media only screen and (min-width: 1281px) {
-  .starship-img-mobile,
-  .robot-img-mobile {
-    display: none;
+@media only screen and (min-width: 2561px) and (max-width: 7680px) {
+  .split-line {
+    border-width: 10px;
+    width: 120px;
+  }
+
+  li {
+    font-size: 34px;
+  }
+
+  .background-container {
+    font-size: 36px;
+  }
+
+  .initials {
+    font-size: 100px;
+    margin: -30px 0 -10px;
+  }
+
+  .primary-title {
+    font-size: 84px;
+    padding: 50px 0;
+  }
+
+  .secondary-title {
+    font-size: 50px;
+    padding: 50px 0;
+  }
+
+  .title-link {
+    font-size: 50px;
+  }
+
+  .nav-bar-link {
+    font-size: 40px;
+  }
+
+  .background-container-dev-blog {
+    font-size: 36px;
+    padding-bottom: 150px;
+  }
+
+  .bio-summary,
+  .flex-spaced-evenly-1,
+  .flex-centered-1 {
+    margin: 50px 0;
+  }
+
+  .robot-img {
+    margin: -130px auto -50px;
+    width: 510px;
+  }
+
+  .images-container {
+    margin: 52px auto;
+    max-width: 80vw;
+    width: 1150px;
+  }
+
+  .neuralink-img,
+  .falcon-9-img,
+  .cybertruck-img,
+  .doge-coin-img,
+  .young-elon-musk-img,
+  .tesla-tunnel-img {
+    margin-bottom: 40px;
+    max-width: 80vw;
+    width: 1150px;
+  }
+
+  .tesla-tunnel-img {
+    margin-bottom: -8px;
+  }
+
+  .nav-column-2-index,
+  .nav-column-2-contacts,
+  .nav-column-2-dev-blog {
+    margin-left: 200px;
+  }
+
+  .nav-column-1-index,
+  .nav-column-1-contacts,
+  .nav-column-1-dev-blog {
+    margin-right: 200px;
+  }
+
+  .secondary-title-column {
+    margin-top: -6px;
+  }
+
+  .section-outline {
+    outline-color: #393232;
+    outline-offset: -2px;
+    outline-style: solid;
+    outline-width: 4px;
+  }
+
+  .img-outline {
+    outline-color: #393232;
+    outline-offset: -4px;
+    outline-style: solid;
+    outline-width: 4px;
   }
 
   .bio-section,
@@ -465,7 +594,39 @@ media-queries
   .socials-section,
   .gallery-section,
   .nav-bar-section-contacts {
+    padding: 30px 30px 50px;
     width: 60%;
+  }
+
+  .nav-bar-section-index,
+  .nav-bar-section-contacts,
+  .nav-bar-section-dev-blog {
+    padding: 50px 30px;
+  }
+
+  .nav-column-1-index {
+    padding-left: 4.03px;
+  }
+
+  .nav-column-1-contacts,
+  .nav-column-1-dev-blog {
+    padding-left: 58.16px;
+  }
+
+  .robotics-summary {
+    padding-right: 151.58px;
+  }
+
+  .nav-column-2-dev-blog {
+    padding-right: 4.03px;
+  }
+
+  .portrait-img {
+    width: 300px;
+  }
+
+  .starship-img {
+    width: 820px;
   }
 }
 
@@ -526,14 +687,10 @@ media-queries
     display: none;
   }
 
-  .nav-bar-section-index,
-  .nav-bar-section-contacts,
-  .nav-bar-section-dev-blog {
-    padding-bottom: 25px;
-  }
-
   .robotics-summary {
-    margin-left: 3.5%;
+    margin-left: 10%;
+    padding-right: 18px;
+    width: 106px;
   }
 
   .nav-column-2-index,
@@ -543,13 +700,20 @@ media-queries
   }
 
   .automotive-industry-summary {
-    margin-right: 3.5%;
+    margin-right: 10%;
+    width: 124px;
   }
 
   .nav-column-1-index,
   .nav-column-1-contacts,
   .nav-column-1-dev-blog {
     margin-right: 10%;
+  }
+
+  .nav-bar-section-index,
+  .nav-bar-section-contacts,
+  .nav-bar-section-dev-blog {
+    padding-bottom: 25px;
   }
 
   .bio-section,
@@ -560,5 +724,26 @@ media-queries
   .gallery-section,
   .nav-bar-section-contacts {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .flex-centered-1 {
+    flex-direction: column;
+  }
+
+  .automotive-industry-summary {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .robotics-summary {
+    margin: 25px auto 0;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .robots-list {
+    margin-bottom: 0;
   }
 }
