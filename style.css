@@ -1,3 +1,5 @@
+/* HTML Elements */
+
 html,
 body {
   margin: 0;
@@ -8,433 +10,18 @@ body {
   background-color: #333333;
 }
 
-li {
-  font-size: 17px;
-  color: #e8e6e3;
-}
-
 p {
-  margin: 0;
   color: #e8e6e3;
+  margin: 0;
 }
 
-/*
-
-
-
-
-
-global-classes
-
-
-
-
-
-*/
-
-.copyright {
-  font-family: "Sacramento";
-  font-size: 1.1vw;
-  bottom: 0;
-  position: fixed;
-  left: 0.4vw;
-}
-
-.flex-centered,
-.flex-centered-1 {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-centered-1 {
-  margin: 25px 0;
-  z-index: -1;
-}
-
-.flex-spaced-evenly,
-.flex-spaced-evenly-1 {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.flex-spaced-evenly-1 {
-  margin: 25px 0;
-}
-
-.img-outline {
-  outline-color: #393232;
-  outline-offset: -2px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-.title-link {
-  font-size: 25px;
-}
-
-.nav-bar-link {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-}
-
-.primary-element-color {
+li {
   color: #e8e6e3;
+  font-size: 17px;
+  line-height: 1.5rem;
 }
 
-.primary-title {
-  font-size: 42px;
-  margin: 0;
-  padding: 25px 0;
-  text-align: center;
-}
-
-.secondary-element-color {
-  color: #f7f6dc;
-}
-
-.secondary-title {
-  font-size: 25px;
-  margin: 0;
-  padding: 25px 0;
-  text-align: center;
-}
-
-.secondary-title-column {
-  margin-top: -3px;
-  padding-top: 0;
-}
-
-.section-outline {
-  outline-color: #393232;
-  outline-offset: -1px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-.split-line {
-  border-style: dotted none none;
-  border-width: 5px;
-  margin: 0 auto;
-  width: 60px;
-}
-
-.tertiary-element-color {
-  color: #d6cda4;
-}
-
-/*
-
-
-
-
-
-background-container
-
-
-
-
-
-*/
-
-.background-container {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  background-color: #18342f;
-  background-image: url("images/img_Sky-L.png"), url("images/img_Sky-R.png");
-  background-position: left, right;
-  background-repeat: repeat-y;
-  background-size: 20vw;
-  z-index: -1;
-}
-
-.background-container-dev-blog {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  padding-bottom: 75px;
-}
-
-#rocket-1-left-img,
-#rocket-1-right-img,
-#rocket-2-left-img,
-#rocket-2-right-img,
-#rocket-3-left-img,
-#rocket-3-right-img {
-  display: block;
-  left: 4vw;
-  position: fixed;
-  top: 9.5vh;
-  width: 4.8vw;
-}
-
-#rocket-1-right-img {
-  left: 86.55vw;
-  top: 9.5vh;
-}
-
-#rocket-2-left-img {
-  left: 9.95vw;
-  top: 43vh;
-}
-
-#rocket-2-right-img {
-  left: 89.8vw;
-  top: 43vh;
-  width: 7.9vw;
-}
-
-#rocket-3-left-img {
-  left: 6.25vw;
-  top: 76.4vh;
-}
-
-#rocket-3-right-img {
-  left: 83.8vw;
-  top: 76.4vh;
-}
-
-/*
-
-
-
-
-
-index.html
-
-
-
-
-
-*/
-
-.bio-section,
-.space-x-section,
-.tesla-section,
-.nav-bar-section-index {
-  background-color: #1c6758;
-  box-sizing: border-box;
-  margin: auto;
-  padding: 15px 15px 25px;
-  width: 60%;
-}
-
-.portrait-img {
-  border-radius: 100%;
-  display: block;
-  margin: 26px auto;
-  max-width: 40vw;
-  width: 150px;
-}
-
-.initials {
-  font-family: "Sacramento";
-  font-size: 50px;
-  margin: -20px 0 -5px;
-  text-align: center;
-}
-
-.bio-summary {
-  margin: 25px 0;
-  text-align: center;
-}
-
-.space-x-section {
-  background-color: #3d8361;
-}
-
-.rockets-summary {
-  margin: auto;
-  width: fit-content;
-}
-
-.retired-vehicles-list {
-  margin-bottom: 0;
-}
-
-.starship-img {
-  display: block;
-  margin: auto;
-  max-width: 40vw;
-  width: 410px;
-}
-
-.starship-img-mobile {
-  content: url(images/img_Starship.jpg);
-  margin: 25px auto;
-  max-width: 80vw;
-  width: 575px;
-}
-
-.starship-img-mobile {
-  display: none;
-}
-
-.tesla-section {
-  background-color: #56776c;
-}
-
-.automotive-industry-summary {
-  margin-right: 15%;
-  width: fit-content;
-}
-
-.automobile-list {
-  margin-bottom: 0;
-}
-
-.robotics-summary {
-  margin-left: 15%;
-  padding-right: 57px;
-  width: fit-content;
-}
-
-.robot-img {
-  display: block;
-  margin: -65px auto -25px;
-  max-width: 40vw;
-  width: 255px;
-  z-index: 1;
-}
-
-.robot-img-mobile {
-  content: url(images/img_Optimus.png);
-  margin: 25px auto -25px;
-  max-width: 50vw;
-  width: 290px;
-}
-
-.robot-img-mobile {
-  display: none;
-}
-
-.nav-bar-section-index {
-  background-color: #649c81;
-  padding: 25px 15px;
-}
-
-.nav-column-1-index {
-  margin-right: 100px;
-  padding-left: 2.03px;
-  width: fit-content;
-}
-
-.nav-column-2-index {
-  margin-left: 100px;
-  width: fit-content;
-}
-
-/*
-
-
-
-
-
-contacts.html
-
-
-
-
-
-*/
-
-.socials-section,
-.gallery-section,
-.nav-bar-section-contacts {
-  background-color: #1c6758;
-  box-sizing: border-box;
-  margin: auto;
-  padding: 15px 15px 25px;
-  width: 60%;
-}
-
-.gallery-section {
-  background-color: #3d8361;
-}
-
-.images-container {
-  margin: 26px auto 25px;
-  max-width: 80vw;
-  width: 575px;
-}
-
-.neuralink-img,
-.falcon-9-img,
-.cybertruck-img,
-.doge-coin-img,
-.young-elon-musk-img,
-.tesla-tunnel-img {
-  margin-bottom: 20px;
-  max-width: 80vw;
-  width: 575px;
-}
-
-.tesla-tunnel-img {
-  margin-bottom: -4px;
-}
-
-.nav-bar-section-contacts {
-  background-color: #56776c;
-  padding: 25px 15px;
-}
-
-.nav-column-1-contacts {
-  margin-right: 100px;
-  padding-left: 29.09px;
-  width: fit-content;
-}
-
-.nav-column-2-contacts {
-  margin-left: 100px;
-  width: fit-content;
-}
-
-/*
-
-
-
-
-
-dev-blog.html
-
-
-
-
-
-*/
-
-.nav-bar-section-dev-blog {
-  background-color: #1c6758;
-  bottom: 0;
-  box-sizing: border-box;
-  padding: 25px 15px;
-  position: fixed;
-  width: 100%;
-}
-
-.nav-column-1-dev-blog {
-  margin-right: 100px;
-  padding-left: 29.09px;
-  width: fit-content;
-}
-
-.nav-column-2-dev-blog {
-  margin-left: 100px;
-  padding-right: 2.03px;
-  width: fit-content;
-}
-
-/*
-
-
-
-
-
-links-and-scrollbar
-
-
-
-
-
-*/
+/* Pseudo Classes & Pseudo Elements*/
 
 a:link,
 a:visited,
@@ -453,282 +40,371 @@ a:hover {
 
 ::-webkit-scrollbar-track {
   background: #555;
-  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #d6cda4;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e8e6e3;
+  background: #f7f6dc;
 }
 
 ::-webkit-scrollbar-corner {
   width: 0;
 }
 
-/*
+/* Global Classes */
 
-
-
-
-
-media-queries
-
-
-
-
-
-*/
-
-@media only screen and (min-width: 2561px) and (max-width: 7680px) {
-  .split-line {
-    border-width: 10px;
-    width: 120px;
-  }
-
-  li {
-    font-size: 34px;
-  }
-
-  .background-container {
-    font-size: 36px;
-  }
-
-  .initials {
-    font-size: 100px;
-    margin: -30px 0 -10px;
-  }
-
-  .primary-title {
-    font-size: 84px;
-    padding: 50px 0;
-  }
-
-  .secondary-title {
-    font-size: 50px;
-    padding: 50px 0;
-  }
-
-  .title-link {
-    font-size: 50px;
-  }
-
-  .nav-bar-link {
-    font-size: 40px;
-  }
-
-  .background-container-dev-blog {
-    font-size: 36px;
-    padding-bottom: 150px;
-  }
-
-  .bio-summary,
-  .flex-spaced-evenly-1,
-  .flex-centered-1 {
-    margin: 50px 0;
-  }
-
-  .robot-img {
-    margin: -130px auto -50px;
-    width: 510px;
-  }
-
-  .images-container {
-    margin: 52px auto;
-    max-width: 80vw;
-    width: 1150px;
-  }
-
-  .neuralink-img,
-  .falcon-9-img,
-  .cybertruck-img,
-  .doge-coin-img,
-  .young-elon-musk-img,
-  .tesla-tunnel-img {
-    margin-bottom: 40px;
-    max-width: 80vw;
-    width: 1150px;
-  }
-
-  .tesla-tunnel-img {
-    margin-bottom: -8px;
-  }
-
-  .nav-column-2-index,
-  .nav-column-2-contacts,
-  .nav-column-2-dev-blog {
-    margin-left: 200px;
-  }
-
-  .nav-column-1-index,
-  .nav-column-1-contacts,
-  .nav-column-1-dev-blog {
-    margin-right: 200px;
-  }
-
-  .secondary-title-column {
-    margin-top: -6px;
-  }
-
-  .section-outline {
-    outline-color: #393232;
-    outline-offset: -2px;
-    outline-style: solid;
-    outline-width: 4px;
-  }
-
-  .img-outline {
-    outline-color: #393232;
-    outline-offset: -4px;
-    outline-style: solid;
-    outline-width: 4px;
-  }
-
-  .bio-section,
-  .space-x-section,
-  .tesla-section,
-  .nav-bar-section-index,
-  .socials-section,
-  .gallery-section,
-  .nav-bar-section-contacts {
-    padding: 30px 30px 50px;
-    width: 60%;
-  }
-
-  .nav-bar-section-index,
-  .nav-bar-section-contacts,
-  .nav-bar-section-dev-blog {
-    padding: 50px 30px;
-  }
-
-  .nav-column-1-index {
-    padding-left: 4.03px;
-  }
-
-  .nav-column-1-contacts,
-  .nav-column-1-dev-blog {
-    padding-left: 58.16px;
-  }
-
-  .robotics-summary {
-    padding-right: 151.58px;
-  }
-
-  .nav-column-2-dev-blog {
-    padding-right: 4.03px;
-  }
-
-  .portrait-img {
-    width: 300px;
-  }
-
-  .starship-img {
-    width: 820px;
-  }
+.primary-element-color {
+  color: #e8e6e3;
 }
 
-@media only screen and (max-width: 1280px) {
-  .background-container {
-    background-image: none;
-  }
-
-  .background-rockets,
-  .starship-img-mobile,
-  .robot-img-mobile {
-    display: none;
-  }
-
-  .nav-column-2-index,
-  .nav-column-2-contacts,
-  .nav-column-2-dev-blog {
-    margin-left: 10%;
-  }
-
-  .nav-column-1-index,
-  .nav-column-1-contacts,
-  .nav-column-1-dev-blog {
-    margin-right: 10%;
-  }
-
-  .bio-section,
-  .space-x-section,
-  .tesla-section,
-  .nav-bar-section-index,
-  .socials-section,
-  .gallery-section,
-  .nav-bar-section-contacts {
-    width: 100%;
-  }
+.secondary-element-color {
+  color: #f7f6dc;
 }
 
-@media only screen and (max-height: 640px) {
+.tertiary-element-color {
+  color: #d6cda4;
+}
+
+.jungle-green-color {
+  background-color: #1c6758;
+}
+
+.caribbean-green-color {
+  background-color: #3d8361;
+}
+
+.ash-green-color {
+  background-color: #56776c;
+}
+
+.mint-green-color {
+  background-color: #649c81;
+}
+
+.section-style {
+  box-sizing: border-box;
+  margin: auto;
+  outline-color: #393232;
+  outline-style: solid;
+  outline-width: 1px;
+  padding: 15px 15px 25px;
+  width: 60%;
+}
+
+.primary-title {
+  font-size: 42px;
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.secondary-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.split-line {
+  border-style: dotted none none;
+  border-width: 5px;
+  margin: auto;
+  width: 60px;
+}
+
+.img-outline {
+  outline-color: #393232;
+  outline-offset: -2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sm-link {
+  font-size: 20px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.nav-bar-section {
+  padding: 25px 0;
+}
+
+.nav-bar-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.nav-bar-column-left {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-right: 15%;
+  text-align: right;
+}
+
+.nav-bar-column-right {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-left: 15%;
+}
+
+.copyright {
+  bottom: 0;
+  font-family: "Sacramento";
+  font-size: 1.1vw;
+  left: 0.4vw;
+  position: fixed;
+}
+
+/* Background */
+
+.background-container {
+  background-color: #18342f;
+  background-image: url("images/img_Sky-L.png"), url("images/img_Sky-R.png");
+  background-position: left, right;
+  background-repeat: repeat-y;
+  background-size: 20%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+.img-position-fixed {
+  display: block;
+  position: fixed;
+  width: 70px;
+}
+
+.rocket-first-left-img {
+  left: 4%;
+  top: 10%;
+}
+
+.rocket-first-right-img {
+  right: 8%;
+  top: 10%;
+}
+
+.rocket-second-left-img {
+  left: 10%;
+  top: 43%;
+}
+
+.rocket-second-right-img {
+  right: 2.5%;
+  top: 43%;
+  width: 110px;
+}
+
+.rocket-third-left-img {
+  left: 6%;
+  top: 76%;
+}
+
+.rocket-third-right-img {
+  right: 11.5%;
+  top: 76%;
+}
+
+/* Index Page */
+
+.portrait-img {
+  border-radius: 100%;
+  display: block;
+  margin: 25px auto 0;
+  max-width: 40vw;
+  width: 150px;
+}
+
+.initials {
+  font-family: "Sacramento";
+  font-size: 50px;
+  text-align: center;
+}
+
+.bio-summary {
+  line-height: 1.5rem;
+  margin: 25px auto;
+  text-align: center;
+  width: 90%;
+}
+
+.space-x-section {
+  padding: 15px 25px 25px;
+}
+
+.space-x-content {
+  margin: 25px 0;
+}
+
+.starship-img {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: auto 5% auto 0;
+  max-width: 490px;
+  width: 237px;
+}
+
+.rockets-summary {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-left: 5%;
+  max-width: 490px;
+}
+
+.tesla-section {
+  padding: 15px 15px 0;
+}
+
+.tesla-content {
+  margin: 25px 0 0;
+}
+
+.automotive-industry-summary,
+.robotics-summary {
+  width: 168px;
+}
+
+.robot-img {
+  display: block;
+  margin: 145px 0 0;
+  max-width: 35vw;
+  width: 340px;
+}
+
+.robot-img-mobile {
+  content: url(images/img_Optimus.png) / "Optimus Robot";
+  display: none;
+  margin: 10px auto 0;
+  max-width: 60vw;
+  width: 290px;
+}
+
+/* Contacts Page */
+
+.gallery-content {
+  gap: 25px;
+  margin: 26px auto 25px;
+}
+
+.gallery-img {
+  display: block;
+  margin: auto;
+  max-width: 45vw;
+  width: 720px;
+}
+
+/* Dev-blog Page */
+
+.header-section {
+  background-color: #808080;
+  padding: 25px 15px;
+}
+
+.coder-gif {
+  display: block;
+  margin: 10px auto 0;
+  max-width: 80vw;
+  width: 160px;
+}
+
+/* Media Queries */
+
+@media (min-height: 1824px) {
   .background-rockets {
     display: none;
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media (max-width: 1200px) {
   .background-container {
     background-image: none;
   }
 
-  .starship-img-mobile,
-  .robot-img-mobile {
-    display: inherit;
+  .background-rockets {
+    display: none;
+  }
+
+  .section-style {
+    width: 100%;
+  }
+
+  .gallery-img {
+    max-width: 70vw;
+  }
+}
+
+@media (max-height: 768px) {
+  .background-rockets {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-container {
+    background-image: none;
   }
 
   .background-rockets,
-  .starship-img,
   .robot-img,
   .copyright {
     display: none;
   }
 
-  .robotics-summary {
-    margin-left: 10%;
-    padding-right: 18px;
-    width: 106px;
+  .section-style {
+    width: 100%;
   }
 
-  .nav-column-2-index,
-  .nav-column-2-contacts,
-  .nav-column-2-dev-blog {
-    margin-left: 10%;
+  .space-x-content {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .rockets-summary {
+    flex: 0 1 auto;
+    margin: auto;
+    max-width: none;
+    width: fit-content;
+  }
+
+  .starship-img {
+    flex: 0 1 auto;
+    margin: auto;
+    max-width: 75vw;
+    width: 420px;
   }
 
   .automotive-industry-summary {
-    margin-right: 10%;
+    margin-right: 8%;
     width: 124px;
   }
 
-  .nav-column-1-index,
-  .nav-column-1-contacts,
-  .nav-column-1-dev-blog {
-    margin-right: 10%;
+  .robotics-summary {
+    margin-left: 8%;
+    width: 124px;
   }
 
-  .nav-bar-section-index,
-  .nav-bar-section-contacts,
-  .nav-bar-section-dev-blog {
-    padding-bottom: 25px;
-  }
-
-  .bio-section,
-  .space-x-section,
-  .tesla-section,
-  .nav-bar-section-index,
-  .socials-section,
-  .gallery-section,
-  .nav-bar-section-contacts {
-    width: 100%;
+  .robot-img-mobile {
+    display: block;
   }
 }
 
-@media only screen and (max-width: 340px) {
-  .flex-centered-1 {
+@media (max-width: 336px) {
+  .tesla-content {
     flex-direction: column;
   }
 
@@ -738,12 +414,20 @@ media-queries
   }
 
   .robotics-summary {
-    margin: 25px auto 0;
-    padding: 0;
+    margin: 8px auto 0;
     width: fit-content;
   }
 
-  .robots-list {
-    margin-bottom: 0;
+  .nav-bar-content {
+    flex-direction: column;
+  }
+
+  .nav-bar-column-left {
+    margin: auto;
+    text-align: center;
+  }
+
+  .nav-bar-column-right {
+    margin: 15px auto 0;
   }
 }

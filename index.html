@@ -4,14 +4,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Felix Dubois" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The Richest Man Alive</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico?v=2" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="style.css" rel="stylesheet" />
+    <link href="favicon.ico?v=2" rel="icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet1"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
@@ -20,18 +26,18 @@
   <body>
     <div class="background-container">
       <div class="background-rockets">
-        <img id="rocket-1-left-img" src="images/img_Rocket-1-L.png" alt="Rocket" />
-        <img id="rocket-1-right-img" src="images/img_Rocket-1-R.png" alt="Rocket" />
-        <img id="rocket-2-left-img" src="images/img_Rocket-2-L.png" alt="Rocket" />
-        <img id="rocket-2-right-img" src="images/img_Rocket-2-R.png" alt="Rocket" />
-        <img id="rocket-3-left-img" src="images/img_Rocket-3-L.png" alt="Rocket" />
-        <img id="rocket-3-right-img" src="images/img_Rocket-3-R.png" alt="Rocket" />
+        <img class="rocket-first-left-img img-position-fixed" src="images/img_Rocket-1-L.png" alt="Paper Rocket" />
+        <img class="rocket-first-right-img img-position-fixed" src="images/img_Rocket-1-R.png" alt="Paper Rocket" />
+        <img class="rocket-second-left-img img-position-fixed" src="images/img_Rocket-2-L.png" alt="Paper Rocket" />
+        <img class="rocket-second-right-img img-position-fixed" src="images/img_Rocket-2-R.png" alt="Paper Rocket" />
+        <img class="rocket-third-left-img img-position-fixed" src="images/img_Rocket-3-L.png" alt="Paper Rocket" />
+        <img class="rocket-third-right-img img-position-fixed" src="images/img_Rocket-3-R.png" alt="Paper Rocket" />
       </div>
 
-      <div class="bio-section section-outline">
-        <img class="portrait-img img-outline" src="images/img_Elon-Musk-face.png" alt="Elon Musks Portrait" />
+      <div class="bio-section section-style jungle-green-color">
+        <img class="portrait-img img-outline" src="images/img_Elon-Musk-face.png" alt="Elon Musks' Portrait" />
 
-        <p class="initials"><em>Elon Musk</em></p>
+        <p class="initials">Elon Musk</p>
 
         <h2 class="secondary-title secondary-element-color">
           <em>The Renowned Entrepreneur and Innovator</em>
@@ -50,14 +56,16 @@
         </div>
       </div>
 
-      <div class="space-x-section section-outline">
+      <div class="space-x-section section-style caribbean-green-color">
         <h2 class="secondary-title secondary-element-color">
-          <em>The Wonders of <a class="title-link secondary-element-color" href="https://www.spacex.com/">SpaceX</a></em>
+          <em>The Wonders of <a class="secondary-element-color" href="https://www.spacex.com/">SpaceX</a></em>
         </h2>
 
         <hr class="split-line tertiary-element-color" />
 
-        <div class="flex-spaced-evenly-1">
+        <div class="space-x-content flex-centered">
+          <img class="starship-img img-outline" src="images/img_Starship.jpg" alt="Starship HLS" />
+
           <div class="rockets-summary">
             <p><em>Current launch vehicles</em></p>
             <ul>
@@ -74,28 +82,25 @@
             </ul>
 
             <p><em>Retired vehicles</em></p>
-            <ul class="retired-vehicles-list">
+            <ul>
               <li>Falcon 1</li>
               <li>Grasshopper</li>
             </ul>
           </div>
-
-          <img class="starship-img img-outline" src="images/img_Starship.jpg" alt="Starship" />
         </div>
-        <div class="starship-img-mobile img-outline"></div>
       </div>
 
-      <div class="tesla-section section-outline">
+      <div class="tesla-section section-style ash-green-color">
         <h2 class="secondary-title secondary-element-color">
-          <em>The Innovations of <a class="title-link secondary-element-color" href="https://www.tesla.com/">Tesla</a></em>
+          <em>The Innovations of <a class="secondary-element-color" href="https://www.tesla.com/">Tesla</a></em>
         </h2>
 
         <hr class="split-line tertiary-element-color" />
 
-        <div class="flex-centered-1">
+        <div class="tesla-content flex-centered">
           <div class="automotive-industry-summary">
             <p><em>Automotive industry</em></p>
-            <ul class="automobile-list">
+            <ul>
               <li>Model S</li>
               <li>Model E</li>
               <li>Model X</li>
@@ -104,35 +109,35 @@
             </ul>
           </div>
 
+          <img class="robot-img" src="images/img_Optimus.png" alt="Optimus Robot" />
+
           <div class="robotics-summary">
             <p><em>Robotics</em></p>
-            <ul class="robots-list">
+            <ul>
               <li>Tesla Bot</li>
               <li>Optimus</li>
             </ul>
           </div>
         </div>
 
-        <img class="robot-img" src="images/img_Optimus.png" alt="Optimus Robot" />
-
         <div class="robot-img-mobile"></div>
       </div>
 
-      <div class="nav-bar-section-index section-outline">
-        <div class="flex-centered">
-          <div class="nav-column-1-index">
+      <footer class="nav-bar-section section-style mint-green-color">
+        <div class="nav-bar-content flex-centered">
+          <div class="nav-bar-column-left">
             <p>
               <a class="nav-bar-link secondary-element-color" href="/Web-Dev-Course-Project/contacts.html"><strong>Contacts</strong></a>
             </p>
           </div>
 
-          <div class="nav-column-2-index">
+          <div class="nav-bar-column-right">
             <p>
               <a class="nav-bar-link secondary-element-color" href="/Web-Dev-Course-Project/dev-blog.html"><strong>Dev Blog</strong></a>
             </p>
           </div>
         </div>
-      </div>
+      </footer>
 
       <p class="copyright">© Felix Dubois</p>
     </div>
