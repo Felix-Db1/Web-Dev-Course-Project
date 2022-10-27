@@ -1,11 +1,13 @@
-# Course Project
+# Web Development
 
-## The Complete 2022 Web Development Bootcamp
+## Index
 
-- [Progress Tracker](https://github.com/Felix-Db1/Web-Dev-Course-Progress)
+- [Hiragana Practice](https://felix-db1.github.io/projects-index/hiragana-practice/)
 
-- [GitHub Page](https://felix-db1.github.io/Web-Dev-Course-Project/)
+- [Mini Wiki - Elon Musk](https://felix-db1.github.io/projects-index/mini-wiki/)
+
+- [Projects](https://felix-db1.github.io/project-index/)
 
 > Created by **Felix Dubois**
 
-<!-- REBASE-7 -->
+<!-- REBASE-8 -->

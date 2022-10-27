@@ -1,24 +1,42 @@
-/* HTML Elements */
-
-html,
 body {
-  margin: 0;
+  background-color: #000;
+  background-image: url("images/img_Moon-phase.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   padding: 0;
-}
-
-body {
-  background-color: #333333;
-}
-
-p {
-  color: #e8e6e3;
   margin: 0;
 }
 
-li {
+.primary-color {
   color: #e8e6e3;
-  font-size: 17px;
-  line-height: 1.5rem;
+}
+
+.index-container {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+.first-project,
+.second-project {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px 60px;
+  margin: 5px;
+  text-align: center;
+}
+
+.second-project {
+  background-color: #444;
+}
+
+.index-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
 }
 
 /* Pseudo Classes & Pseudo Elements*/
@@ -30,7 +48,7 @@ a:hover {
 }
 
 a:hover {
-  color: #d6cda4;
+  color: #bdbab7;
 }
 
 ::-webkit-scrollbar {
@@ -43,391 +61,14 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d6cda4;
+  background: #bdbab7;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f7f6dc;
+  background: #e8e6e3;
 }
 
 ::-webkit-scrollbar-corner {
   width: 0;
-}
-
-/* Global Classes */
-
-.primary-element-color {
-  color: #e8e6e3;
-}
-
-.secondary-element-color {
-  color: #f7f6dc;
-}
-
-.tertiary-element-color {
-  color: #d6cda4;
-}
-
-.jungle-green-color {
-  background-color: #1c6758;
-}
-
-.caribbean-green-color {
-  background-color: #3d8361;
-}
-
-.ash-green-color {
-  background-color: #56776c;
-}
-
-.mint-green-color {
-  background-color: #649c81;
-}
-
-.section-style {
-  box-sizing: border-box;
-  margin: auto;
-  outline-color: #393232;
-  outline-style: solid;
-  outline-width: 1px;
-  padding: 15px 15px 25px;
-  width: 60%;
-}
-
-.primary-title {
-  font-size: 42px;
-  margin: 0;
-  padding: 25px 0;
-  text-align: center;
-}
-
-.secondary-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
-  margin: 0;
-  padding: 25px 0;
-  text-align: center;
-}
-
-.split-line {
-  border-style: dotted none none;
-  border-width: 5px;
-  margin: auto;
-  width: 60px;
-}
-
-.img-outline {
-  outline-color: #393232;
-  outline-offset: -2px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-.flex-centered {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.sm-link {
-  font-size: 20px;
-  margin: 25px 0;
-  text-align: center;
-}
-
-.nav-bar-section {
-  padding: 25px 0;
-}
-
-.nav-bar-link {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-}
-
-.nav-bar-column-left {
-  flex-basis: 0;
-  flex-grow: 1;
-  margin-right: 15%;
-  text-align: right;
-}
-
-.nav-bar-column-right {
-  flex-basis: 0;
-  flex-grow: 1;
-  margin-left: 15%;
-}
-
-.copyright {
-  bottom: 0;
-  font-family: "Sacramento";
-  font-size: 1.1vw;
-  left: 0.4vw;
-  position: fixed;
-}
-
-/* Background */
-
-.background-container {
-  background-color: #18342f;
-  background-image: url("images/img_Sky-L.png"), url("images/img_Sky-R.png");
-  background-position: left, right;
-  background-repeat: repeat-y;
-  background-size: 20%;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-}
-
-.img-position-fixed {
-  display: block;
-  position: fixed;
-  width: 70px;
-}
-
-.rocket-first-left-img {
-  left: 4%;
-  top: 10%;
-}
-
-.rocket-first-right-img {
-  right: 8%;
-  top: 10%;
-}
-
-.rocket-second-left-img {
-  left: 10%;
-  top: 43%;
-}
-
-.rocket-second-right-img {
-  right: 2.5%;
-  top: 43%;
-  width: 110px;
-}
-
-.rocket-third-left-img {
-  left: 6%;
-  top: 76%;
-}
-
-.rocket-third-right-img {
-  right: 11.5%;
-  top: 76%;
-}
-
-/* Index Page */
-
-.portrait-img {
-  border-radius: 100%;
-  display: block;
-  margin: 25px auto 0;
-  max-width: 40vw;
-  width: 150px;
-}
-
-.initials {
-  font-family: "Sacramento";
-  font-size: 50px;
-  text-align: center;
-}
-
-.bio-summary {
-  line-height: 1.5rem;
-  margin: 25px auto;
-  text-align: center;
-  width: 90%;
-}
-
-.space-x-section {
-  padding: 15px 25px 25px;
-}
-
-.space-x-content {
-  margin: 25px 0;
-}
-
-.starship-img {
-  display: block;
-  flex-basis: 0;
-  flex-grow: 1;
-  margin: auto 5% auto 0;
-  max-width: 490px;
-  width: 237px;
-}
-
-.rockets-summary {
-  flex-basis: 0;
-  flex-grow: 1;
-  margin-left: 5%;
-  max-width: 490px;
-}
-
-.tesla-section {
-  padding: 15px 15px 0;
-}
-
-.tesla-content {
-  margin: 25px 0 0;
-}
-
-.automotive-industry-summary,
-.robotics-summary {
-  width: 168px;
-}
-
-.robot-img {
-  display: block;
-  margin: 145px 0 0;
-  max-width: 35vw;
-  width: 340px;
-}
-
-.robot-img-mobile {
-  content: url(images/img_Optimus.png) / "Optimus Robot";
-  display: none;
-  margin: 10px auto 0;
-  max-width: 60vw;
-  width: 290px;
-}
-
-/* Contacts Page */
-
-.gallery-content {
-  gap: 25px;
-  margin: 26px auto 25px;
-}
-
-.gallery-img {
-  display: block;
-  margin: auto;
-  max-width: 45vw;
-  width: 720px;
-}
-
-/* Dev-blog Page */
-
-.header-section {
-  background-color: #808080;
-  padding: 25px 15px;
-}
-
-.coder-gif {
-  display: block;
-  margin: 10px auto 0;
-  max-width: 80vw;
-  width: 160px;
-}
-
-/* Media Queries */
-
-@media (min-height: 1824px) {
-  .background-rockets {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  .background-container {
-    background-image: none;
-  }
-
-  .background-rockets {
-    display: none;
-  }
-
-  .section-style {
-    width: 100%;
-  }
-
-  .gallery-img {
-    max-width: 70vw;
-  }
-}
-
-@media (max-height: 768px) {
-  .background-rockets {
-    display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .background-container {
-    background-image: none;
-  }
-
-  .background-rockets,
-  .robot-img,
-  .copyright {
-    display: none;
-  }
-
-  .section-style {
-    width: 100%;
-  }
-
-  .space-x-content {
-    flex-direction: column-reverse;
-    gap: 8px;
-  }
-
-  .rockets-summary {
-    flex: 0 1 auto;
-    margin: auto;
-    max-width: none;
-    width: fit-content;
-  }
-
-  .starship-img {
-    flex: 0 1 auto;
-    margin: auto;
-    max-width: 75vw;
-    width: 420px;
-  }
-
-  .automotive-industry-summary {
-    margin-right: 8%;
-    width: 124px;
-  }
-
-  .robotics-summary {
-    margin-left: 8%;
-    width: 124px;
-  }
-
-  .robot-img-mobile {
-    display: block;
-  }
-}
-
-@media (max-width: 336px) {
-  .tesla-content {
-    flex-direction: column;
-  }
-
-  .automotive-industry-summary {
-    margin: 0 auto;
-    width: fit-content;
-  }
-
-  .robotics-summary {
-    margin: 8px auto 0;
-    width: fit-content;
-  }
-
-  .nav-bar-content {
-    flex-direction: column;
-  }
-
-  .nav-bar-column-left {
-    margin: auto;
-    text-align: center;
-  }
-
-  .nav-bar-column-right {
-    margin: 15px auto 0;
-  }
 }
