@@ -1,37 +1,47 @@
 body {
   background-color: #000;
   background-image: url("images/img_Moon-phase.png");
-  background-size: 100%;
+  background-size: 100%; /* full size of the image */
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /* entire viewport height */
   padding: 0;
   margin: 0;
 }
 
-.primary-color {
+/* Global Classes */
+
+.white-smoke-color {
   color: #e8e6e3;
 }
 
-.index-container {
+.primary-bg-color {
   background-color: #222;
+}
+
+.secondary-bg-color {
+  background-color: #333;
+}
+
+.tertiary-bg-color {
+  background-color: #444;
+}
+
+/* Index */
+
+.index-container {
   border-radius: 15px;
 }
 
 .first-project,
 .second-project {
-  background-color: #333;
   border-radius: 10px;
+  text-align: center;
   padding: 20px 60px;
   margin: 5px;
-  text-align: center;
-}
-
-.second-project {
-  background-color: #444;
 }
 
 .index-link {

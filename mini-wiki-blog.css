@@ -24,6 +24,8 @@
   width: 60%;
 }
 
+/* Media Queries */
+
 @media (max-width: 1200px) {
   .nav-bar-content {
     width: 100%;

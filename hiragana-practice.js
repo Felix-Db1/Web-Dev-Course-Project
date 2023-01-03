@@ -46,87 +46,105 @@ const characters = [
   { hiragana: "を", romaji: "wo" },
   { hiragana: "ん", romaji: "n" },
 ];
+// creates an array with multiple elements
+// each element is an object
+// each object has two properties (keys)
 
 const characterElement = document.querySelector(".character");
+// selects an element from the HTML document
+// takes a CSS selector as an argument and returns the first element that matches the selector
+// stores a reference to that element in a variable
 const inputElement = document.querySelector(".input");
 const scoreContainer = document.querySelector(".score-container");
 const scoreElement = document.querySelector(".score");
-const resultElement = document.querySelector(".result");
+const timeResultElement = document.querySelector(".time-result");
 const buttonElement = document.querySelector(".restart");
 const audioElement = new Audio("audio/wav_Game-over.wav");
+// creates and returns a new HTMLAudioElement object
+// optionally starts the process of loading an audio file
 
 let score = 0;
 let startTime;
 let currentCharacter;
-let gameStartTime;
 let gameOver = false;
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    [array[i], array[j]] = [array[j], array[i]]; // destructuring assignment
   }
   return array;
 }
-
-function endGame() {
-  gameOver = true;
-  characterElement.textContent = "やった！";
-  resultElement.style.display = "block";
-  resultElement.textContent = `Time: ${Math.floor((Date.now() - gameStartTime) / 1000)} seconds`;
-  audioElement.volume = 0.1;
-  audioElement.play();
-}
-
-function checkAnswer() {
-  if (gameOver) {
-    return;
-  }
-
-  if (inputElement.value.trim().toLowerCase() === currentCharacter.romaji.toLowerCase()) {
-    score += 10;
-  } else {
-    score -= 5;
-    if (score < 0) {
-      score = 0;
-    }
-    scoreContainer.classList.add("incorrect");
-    setTimeout(function () {
-      scoreContainer.classList.remove("incorrect");
-    }, 300);
-  }
-  scoreElement.textContent = score;
-  inputElement.value = "";
-  nextCharacter();
-}
+// takes an array as an argument and shuffles its elements randomly
+// loops through the array backwards and swaps each element with another random element
+// returns the shuffled array
+// Math.floor() rounds down the result to the nearest whole number
+// Math.random() returns a random number between 0 (inclusive) and 1 (exclusive)
 
 function nextCharacter() {
-  if (gameOver) {
-    return;
-  }
-
-  gameStartTime = gameStartTime || Date.now();
-  startTime = Date.now();
-
   const charactersShuffled = shuffle(characters);
   let character;
-  let index;
   for (let i = 0; i < charactersShuffled.length; i++) {
     character = charactersShuffled[i];
-    index = characters.indexOf(character);
     if (!character.guessed) {
       character.guessed = true;
-      startTime = Date.now();
       currentCharacter = character;
       characterElement.textContent = character.hiragana;
-      inputElement.value = "";
-      inputElement.focus();
       return;
     }
   }
   gameOver = true;
   endGame();
 }
+// selects the first/next character to be displayed
+// creates a new array which is a shuffled version of the original characters array
+// iterates through the shuffled array to find the next character that has not been guessed yet
+// the for loop completes when all characters have been used
+// displays the end game screen
+
+function checkAnswer() {
+  if (gameOver) {
+    return;
+  }
+
+  if (!startTime) {
+    startTime = Date.now();
+  }
+
+  if (inputElement.value.trim().toLowerCase() === currentCharacter.romaji) {
+    score += 10;
+  } else {
+    score -= 5;
+    if (score < 0) {
+      score = 0;
+    }
+    scoreContainer.classList.add("incorrect-bg-color");
+    setTimeout(function () {
+      scoreContainer.classList.remove("incorrect-bg-color");
+    }, 300);
+  }
+
+  scoreElement.textContent = score;
+  inputElement.value = "";
+  nextCharacter();
+}
+// sets the start time to the current time if it hasn't been set yet
+// increases the score by 10 if the answer is correct
+// decreases the score by 5 if the answer is incorrect and changes the background color of the score container element for 0.3 seconds
+// updates the score element with the current score
+// clears the user's input
+// displays the next character
+
+function endGame() {
+  characterElement.textContent = "やった！";
+  timeResultElement.style.display = "block";
+  timeResultElement.textContent = `Time: ${Math.floor((Date.now() - startTime) / 1000)} seconds`;
+  audioElement.volume = 0.1;
+  audioElement.play();
+}
+// changes the text content of the character element to a custom message
+// makes the timer visible and displays the time it took to finish the game
+// plays an audio file
 
 inputElement.addEventListener("keydown", function (event) {
   if (event.keyCode === 13) {
@@ -134,9 +152,14 @@ inputElement.addEventListener("keydown", function (event) {
     checkAnswer();
   }
 });
+// adds an event listener for the keydown event to the input element
+// if the pressed key is Enter, the default action of the event (submit form) is prevented and the checkAnswer function is called
 
 buttonElement.addEventListener("click", function () {
   location.reload();
 });
+// adds an event listener for the click event to the button element
+// when the button is clicked, the current page reloads
 
 nextCharacter();
+// starts the game

@@ -4,14 +4,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /* entire viewport height */
   padding: 0;
   margin: 0;
 }
 
-.primary-color {
+/* Global Classes */
+
+.white-smoke-color {
   color: #e8e6e3;
 }
+
+.primary-bg-color {
+  background-color: #444;
+}
+
+.incorrect-bg-color {
+  background-color: #ff6961;
+}
+
+/* Hiragana Practice */
 
 .character {
   font-size: 120px;
@@ -20,9 +32,8 @@ body {
 
 .input-container,
 .score-container,
-.result {
-  background-color: #444;
-  transition: background-color 0.3s;
+.time-result {
+  transition: background-color 0.3s; /* when the background color changes */
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
@@ -34,36 +45,31 @@ body {
 
 .input {
   background-color: transparent;
-  width: 100%;
-  font-size: 40px;
+  width: 100%; /* relative to its parent element (input-container) */
   border: 0;
-  padding: 0;
+  font-size: 40px;
   text-align: center;
+  padding: 0;
 }
 
-.initial-score,
+.score-display,
 .score {
   font-family: sans-serif;
   font-size: 30px;
 }
 
-.result {
+.time-result {
   font-family: sans-serif;
   font-size: 25px;
-  display: none;
+  display: none; /* hidden until the end of the game */
 }
 
 .restart {
   font-size: 30px;
-  background-color: #444;
   border-radius: 5px;
   border-color: #e8e6e3;
   padding: 2px 8px;
   margin: 5px 0;
-}
-
-.incorrect {
-  background-color: #ff6961;
 }
 
 /* Pseudo Classes & Pseudo Elements*/
