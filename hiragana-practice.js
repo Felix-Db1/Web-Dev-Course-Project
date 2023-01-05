@@ -138,7 +138,8 @@ function checkAnswer() {
 function endGame() {
   characterElement.textContent = "やった！";
   timeResultElement.style.display = "block";
-  timeResultElement.textContent = `Time: ${Math.floor((Date.now() - startTime) / 1000)} seconds`;
+  // timeResultElement.textContent = `Time: ${Math.round((Date.now() - startTime) / 1000)} seconds`;
+  timeResultElement.textContent = `Time: ${((Date.now() - startTime) / 1000).toFixed(1)} seconds`;
   audioElement.volume = 0.1;
   audioElement.play();
 }
